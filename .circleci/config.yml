@@ -58,7 +58,7 @@ jobs:
       name: Run application in background
       command: |
        docker run ${DOCKER_REPO}/${CIRCLE_PROJECT_REPONAME}
-        background: true
+      background: true
    - run:
       name: ZAP baseline scan of application
       # Only fail on error code 1, which indicates at least one FAIL was found.
